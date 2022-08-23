@@ -90,3 +90,8 @@ a:hover {
   font-weight: bold;
   font-size: larger;
 }
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
