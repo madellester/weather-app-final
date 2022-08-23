@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/dd1d08b011.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <input
+              type="search"
+              placeholder="Enter city..."
+              autocomplete="off"
+              autofocus="on"
+              id="search-city-input"
+            />
+
+            <input type="submit" value="Search" class="btn btn-warning" />
+          </form>
+          <h1>New York</h1>
+          <h4 id="current-time">Friday 12:00</h4>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="light rain"
+            id="icon"
+          />
+          <h2>
+            <span class="current-temp" id="temperature">62</span
+            ><span class="units">
+              <a href="#" id="fahrenheit-link"> °F</a></span
+            >
+          </h2>
+          <ul>
+            <li><span id="weather-description"></span></li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> mph</li>
+          </ul>
+          <hr />
+          <div class="weather-forecast d-flex" id="forecast"></div>
+        </div>
+        <a
+          class="signature"
+          href="https://github.com/madellester/new-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Madeline Lester
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
